@@ -1,3 +1,55 @@
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: rgb(224,222,223); /* linen */
+    display: grid;
+}
+
+header {
+    background-color: rgb(176,193,187); /* sea breeze */
+    border-bottom: 5px solid;
+    border-color: rgb(195,107,93); /* dark coral */
+    width: 100%;
+}
+
+header > .header-logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+main {
+    padding-bottom: 1rem;
+}
+
+h1, h2 {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+}
+
+h1 {
+    color: rgb(73,93,97); /* ocean */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 5rem;
+    /*color: rgb(144,152,145);  sage */
+    color: rgb(58,68,68); /* dark ocean */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+section > div > h2 {
+    padding-left: 1rem;
+}
+
 #cursosContenido > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,6 +92,24 @@
     margin: auto;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
+}
+
+footer {
+    display: grid;
+    background-color: rgb(176,193,187); /* sea breeze */
+    padding-top: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.powered-by {
+    text-align: center;
+    color: rgb(209,157,112); /* wheat */
+    background-color: rgb(176,193,187); /* sea breeze */
+
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
