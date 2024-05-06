@@ -143,10 +143,30 @@ footer > div {
 
 @media screen and (max-width: 768px) {
     #cursosContenido > div {
-        display: grid;
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+    }
+
+    header > .header-logo {
+        grid-template-columns: 1fr;
+    }
+
+    header > .header-logo > a {
+        display: none;
+    }
+
+    header > .header-logo > div {
+        text-align: center;
+    }
+
+    header > .header-logo > div > h1 {
+        font-size: 6rem;
+    }
+    
+    footer > div {
+        grid-template-columns: 1fr;
+    }
+
+    footer > div > div {
+        text-align: center;
     }
 }
