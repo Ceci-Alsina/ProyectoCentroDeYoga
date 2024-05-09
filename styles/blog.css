@@ -1,0 +1,32 @@
+/* Estilos generales */
+.img-overlay-container {
+    position: relative;
+    /* Permite el posicionamiento absoluto de los elementos internos respecto a este contenedor */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+.img-overlay-container img {
+    width: 100%;
+    /* Asegura que la imagen cubra todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.img-text {
+    font-style: var(--color-light-blue);
+    position: absolute;
+    /* Posiciona el texto de manera absoluta dentro del contenedor */
+    top: 20%;
+    /* Alinea el texto en la parte superior del contenedor */
+    left: 50%;
+    /* Centra el texto horizontalmente */
+    transform: translateX(-50%);
+    /* Ajuste fino para centrar exactamente el texto */
+    width: 90%;
+    /* Ancho del texto para asegurar margen */
+    color: rgb(2, 0, 7);
+    /* Color del texto */
+    /* background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+    
+}
