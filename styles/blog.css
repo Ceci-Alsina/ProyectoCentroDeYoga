@@ -63,6 +63,36 @@ nav li a {
     display: block;
 }
 
+/* Style buscador */
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#searchInput {
+    padding: 8px;
+    margin-right: 5px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 8px 10px;
+    margin: 10px;
+    background-color: var(--color-light-violeta);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-light-pink);
+    color: black;
+}
+
+
 /* Estilos generales */
 .img-overlay-container {
     position: relative;
@@ -93,42 +123,65 @@ nav li a {
     color: rgb(2, 0, 7);
     /* Color del texto */
     /* background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
-    
+
 }
 
 
-
+.imagen-blog {
+    width: 50%;
+}
 
 /* Media Queries para pantallas de 992px */
 @media (max-width: 992px) {
     .contenido {
-        flex-direction: column; /* Cambia la disposición de fila a columna */
+        flex-direction: column;
+        /* Cambia la disposición de fila a columna */
     }
 
-    .item1, .sidebar {
-        width: 100%; /* Hace que ambos bloques ocupen todo el ancho disponible */
-        max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
-        margin-top: 10px; /* Añade espacio entre los bloques */
+    .item1,
+    .sidebar {
+        width: 100%;
+        /* Hace que ambos bloques ocupen todo el ancho disponible */
+        max-width: 100%;
+        /* Asegura que no excedan el ancho del contenedor */
+        margin-top: 10px;
+        /* Añade espacio entre los bloques */
+    }
+
+    .search-container {
+        width: 100%;
     }
 }
 
 /* Media Queries para pantallas de 800px */
 @media (max-width: 800px) {
     .contenido {
-        flex-direction: column; /* Mantiene la disposición en columna */
+        flex-direction: column;
+        /* Mantiene la disposición en columna */
     }
 
-    .item1, .sidebar {
-        width: 100%; /* Asegura que ambos bloques ocupen todo el ancho */
-        max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
-        margin-top: 10px; /* Mantiene el espacio entre los bloques */
+    .item1,
+    .sidebar {
+        width: 100%;
+        /* Asegura que ambos bloques ocupen todo el ancho */
+        max-width: 100%;
+        /* Asegura que no excedan el ancho del contenedor */
+        margin-top: 10px;
+        /* Mantiene el espacio entre los bloques */
     }
 
-    header, nav ul {
-        flex-direction: column; /* Cambia la navegación a una disposición vertical */
+    header,
+    nav ul {
+        flex-direction: column;
+        /* Cambia la navegación a una disposición vertical */
     }
 
     nav li {
-        width: 100%; /* Hace que cada enlace de navegación ocupe todo el ancho disponible */
+        width: 100%;
+        /* Hace que cada enlace de navegación ocupe todo el ancho disponible */
+    }
+
+    .search-container {
+        width: 100%;
     }
 }
