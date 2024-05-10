@@ -1,0 +1,134 @@
+/* Colores de diseño */
+:root {
+    --color-light-blue: rgb(181, 192, 208);
+    --color-light-grey: rgb(204, 211, 202);
+    --color-peach: rgb(245, 232, 221);
+    --color-light-pink: rgb(238, 211, 217);
+    --color-light-violet: rgb(230, 222, 236);
+    --color-light-violeta: rgb(121, 103, 134);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: linear-gradient(to right, var(--color-light-blue), var(--color-light-pink));
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, var(--color-light-violeta), var(--color-light-blue));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    /* el elemento está posicionado de acuerdo al flujo normal del documento, 
+    y luego es desplazado con relación a su ancestro que se desplaza más cercano
+    y su bloque contenedor (en-US)(ancestro en nivel de bloque más cercano) incluyendo
+    elementos relacionados a tablas, basados ​​en los valores de top, right, bottom, y left. 
+    El desplazamiento no afecta la posición de ningún otro elemento.*/
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    /*flexbox para alinear los elementos horizontalmente*/
+    justify-content: space-between;
+    /* Alinea los elementos a los extremos del contenedor */
+    align-items: center;
+    /*centra los elementos verticamente*/
+    padding: 20px;
+
+}
+
+.logo img {
+    width: 120px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 120px;
+    /* Altura igual al ancho para mantener la proporción y crear un círculo perfecto */
+    border-radius: 50%;
+    /* Esto hace que el borde sea completamente redondo */
+    object-fit: cover;
+    /* Asegura que la imagen cubra completamente el espacio sin deformarse */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+/* Estilos generales */
+.img-overlay-container {
+    position: relative;
+    /* Permite el posicionamiento absoluto de los elementos internos respecto a este contenedor */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+.img-overlay-container img {
+    width: 100%;
+    /* Asegura que la imagen cubra todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.img-text {
+    font-style: var(--color-light-blue);
+    position: absolute;
+    /* Posiciona el texto de manera absoluta dentro del contenedor */
+    top: 20%;
+    /* Alinea el texto en la parte superior del contenedor */
+    left: 50%;
+    /* Centra el texto horizontalmente */
+    transform: translateX(-50%);
+    /* Ajuste fino para centrar exactamente el texto */
+    width: 90%;
+    /* Ancho del texto para asegurar margen */
+    color: rgb(2, 0, 7);
+    /* Color del texto */
+    /* background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+    
+}
+
+
+
+
+/* Media Queries para pantallas de 992px */
+@media (max-width: 992px) {
+    .contenido {
+        flex-direction: column; /* Cambia la disposición de fila a columna */
+    }
+
+    .item1, .sidebar {
+        width: 100%; /* Hace que ambos bloques ocupen todo el ancho disponible */
+        max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
+        margin-top: 10px; /* Añade espacio entre los bloques */
+    }
+}
+
+/* Media Queries para pantallas de 800px */
+@media (max-width: 800px) {
+    .contenido {
+        flex-direction: column; /* Mantiene la disposición en columna */
+    }
+
+    .item1, .sidebar {
+        width: 100%; /* Asegura que ambos bloques ocupen todo el ancho */
+        max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
+        margin-top: 10px; /* Mantiene el espacio entre los bloques */
+    }
+
+    header, nav ul {
+        flex-direction: column; /* Cambia la navegación a una disposición vertical */
+    }
+
+    nav li {
+        width: 100%; /* Hace que cada enlace de navegación ocupe todo el ancho disponible */
+    }
+}
