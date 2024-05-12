@@ -8,65 +8,9 @@
     --color-light-violeta: rgb(121, 103, 134);
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background: linear-gradient(to right, var(--color-light-blue), var(--color-light-pink));
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(to right, var(--color-light-violeta), var(--color-light-blue));
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    /* el elemento está posicionado de acuerdo al flujo normal del documento, 
-    y luego es desplazado con relación a su ancestro que se desplaza más cercano
-    y su bloque contenedor (en-US)(ancestro en nivel de bloque más cercano) incluyendo
-    elementos relacionados a tablas, basados ​​en los valores de top, right, bottom, y left. 
-    El desplazamiento no afecta la posición de ningún otro elemento.*/
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    /*flexbox para alinear los elementos horizontalmente*/
-    justify-content: space-between;
-    /* Alinea los elementos a los extremos del contenedor */
-    align-items: center;
-    /*centra los elementos verticamente*/
-    padding: 20px;
-
-}
-
-.logo img {
-    width: 120px;
-    /* Ajusta el tamaño según tus necesidades */
-    height: 120px;
-    /* Altura igual al ancho para mantener la proporción y crear un círculo perfecto */
-    border-radius: 50%;
-    /* Esto hace que el borde sea completamente redondo */
-    object-fit: cover;
-    /* Asegura que la imagen cubra completamente el espacio sin deformarse */
-}
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    display: block;
-}
-
 /* Style buscador */
 .search-container {
     text-align: center;
-    margin: 20px;
 }
 
 #searchInput {
@@ -139,7 +83,7 @@ button:hover {
     width: 80%;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+
 }
 
 .section-blog {
@@ -167,6 +111,8 @@ button:hover {
 }
 .section-blog article p {
     text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .section-blog a{
     display: block;
@@ -174,15 +120,6 @@ button:hover {
     color: var(--color-light-violeta);
     text-align: right;
     margin: 10px;
-}
-
-footer {
-    background: linear-gradient(to right, var(--color-light-violeta), var(--color-light-blue));
-    color: black;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 /* Media Queries para pantallas de 992px */
