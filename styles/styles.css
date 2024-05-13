@@ -67,11 +67,19 @@ nav ul {
     justify-content: space-around;
 }
 
+nav li {
+    border-bottom: 0.15rem solid transparent;
+}
+
 nav li a {
     text-decoration: none;
     color: black;
     padding: 10px;
     display: block;
+}
+
+nav li:hover {
+    border-bottom: 0.15rem solid var(--color-light-grey);
 }
 
 .contenido {
