@@ -37,8 +37,10 @@
 
 #formularioContacto > input[type=submit] {
     width: 100px;
-    background-color: var(--color-light-violet);
-    border: 0px;
+    background-color: var(--color-light-violeta);
+    border: none;
+    border-radius: 10px;
+    color: white;
 }
 
 /* Media Queries para pantallas de 992px */
