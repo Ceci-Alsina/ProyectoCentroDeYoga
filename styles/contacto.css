@@ -43,6 +43,11 @@
     color: white;
 }
 
+
+#Genero{
+
+}
+
 /* Media Queries para pantallas de 992px */
 @media (max-width: 992px) {
     #contactoContenido > div {
