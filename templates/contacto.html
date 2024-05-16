@@ -51,8 +51,8 @@
                         <label for="apellido">Apellido:</label>
                         <input type="text" id="apellido" name="apellido" required>
                         
-                        <label for="edad">Rango de edad:</label>
-                        <div>
+                        <label>Edad:</label>
+                        <div id="rangoEdad">
                             <input type="radio" name="edad" class="edad" id="15"> 15 a 34 años
                             <br>
                             <input type="radio" name="edad" class="edad" id="35"> 35 a 45 años
@@ -61,24 +61,27 @@
                         </div>
                        
                         <label for="genero">Genero:</label>
-                        <select  name="Genero" id="Genero" width:25rem>
-                            <option value="genero"></option>
-                            <option value="hombre">Hombre</option>
+                        <select  name="genero" id="genero">
+                            <option value="genero">&nbsp;</option>
+                            <option style="font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;" value="hombre">Hombre</option>
                             <option value="mujer">Mujer</option>
                             <option value="nodeclara">otro</option>
                         </select>
                         <label for="email">E-Mail:</label>
-                        <input type="mail" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required>
 
                         <label for="telefono">Telefono:</label>
-                        <input type="number" id="telefono" name="telefono" required>
+                        <input type="tel" id="telefono" name="telefono" required>
 
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje"></textarea>
                         <span></span>
-                       <br> 
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                        <br>
+                        <span></span>
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
                   
                     </form>
                 </div>

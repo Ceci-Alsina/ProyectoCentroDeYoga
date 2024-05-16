@@ -161,9 +161,3 @@ footer > div {
         /* Hace que cada enlace de navegación ocupe todo el ancho disponible */
     }
 }
-
-
-*/css contacto.html*/
-.edad + label {
-    font-size: 0.8rem;
-}
