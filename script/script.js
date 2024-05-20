@@ -3,3 +3,5 @@ let menu_responsive = document.querySelector(".checkbtn");
         navBar = document.querySelector(".navbar");
         navBar.classList.toggle("active");
       };
+
+      

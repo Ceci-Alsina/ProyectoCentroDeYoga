@@ -141,6 +141,24 @@ button:hover {
     .search-container {
         width: 100%;
     }
+    .img-text h1{
+        font-size: 2rem;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Mejora la legibilidad sobre la imagen */
+    }
+    
+    .img-text p{
+        font-size: 1rem;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .section-blog article h2{
+        font-size: 1.5rem solid ;
+        
+        margin: auto;
+        padding: 5px;
+    }
+    .section-blog article h3{
+        font-size: 0.75rem;
+    }
 }
 
 /* Media Queries para pantallas de 800px */
@@ -173,5 +191,22 @@ button:hover {
 
     .search-container {
         width: 100%;
+    }
+    .img-text h1{
+        font-size: 2rem;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Mejora la legibilidad sobre la imagen */
+    }
+    
+    .img-text p{
+        font-size: 0.9rem;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .section-blog article h2{
+        font-size: 1rem;
+        margin: auto;
+        padding: 5px;
+    }
+    .section-blog article h3{
+        font-size: 0.75rem;
     }
 }
