@@ -36,9 +36,9 @@ HTML, CSS y Javascript
     --color-light-violeta: rgb(121, 103, 134);
 
 ## Sitios web de referencia
-https://xuanlanyoga.com/blog/
-https://flowsoulyoga.com/
-https://www.es-yoga.com/blog/
+* https://xuanlanyoga.com/blog/
+* https://flowsoulyoga.com/
+* https://www.es-yoga.com/blog/
 
 ## Demo
 https://ceci-alsina.github.io/ProyectoCentroDeYoga/index.html
