@@ -50,12 +50,12 @@
                                id="nombre" 
                                name="nombre" 
                                placeholder="Escriba su nombre en letras" 
-                               pattern="[a-zA-Z\s]{1,15}" >
+                               pattern="[a-zA-Z\s]{1,15}" required>
 
                         <label for="apellido">Apellido:</label>
                         <input type="text" id="apellido" name="apellido"  
                         placeholder="Escriba su apellido en letras"
-                        pattern="[a-zA-Z\s]{2,15}">
+                        pattern="[a-zA-Z\s]{2,15}" required>
                     
                         
                         <label>Edad:</label>
@@ -80,10 +80,10 @@
                         placeholder="Escriba su email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,30}$" required>
 
                         <label for="telefono">Telefono:</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Escriba su numero telefono"  pattern="[0-9]+" required>
 
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje"></textarea>
+                        <textarea id="mensaje" name="mensaje" pattern="[a-zA-Z\s]{1,200}" required></textarea>
                         <span></span>
                         <br>
                         <span></span>   
